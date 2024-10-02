@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmin Photography</title>
+    <link rel="stylesheet" href="./styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-wrapper">
+    <nav class="navbar">
+            <div class="nav-div">
+                <img class="heading-logo" src="./images/cosminphotographylogo.png">
+            <button data-modal-open class="hamburger-button" type="button"><svg class="hamburger-menu-mobile"><use href="./symbol-defs.svg#hamburger-menu"></use></svg></button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+            <button data-modal-close class="modal-close" type="button"><svg><use href="./symbol-defs.svg#modal-close"></use></svg></button>
+            <ul class="link-class-modal">
+                <a class ="mobile-modal-link"href="./overview">OVERVIEW</a>
+                <a class ="mobile-modal-link"href="./overview">WEDDINGS</a>
+                <a class ="mobile-modal-link"href="./overview">BIRTHDAYS</a>
+                <a class ="mobile-modal-link"href="./overview">ABOUT ME</a>
+                <a class ="mobile-modal-link"href="./overview">CONTACT</a>
+            </ul>
+        </div>
+    </nav>
+    <section class="main-section">
+        <div class="img-container">
+            <div class="img-wrapper">
+                <picture>
+                    <source media="(min-width:480px)"
+                    srcset="./images/placeholder-img.jpg"
+                    width="auto">
+                    <img src="./images/placeholder-img.jpg" alt="photo-of-person" width="auto">
+                </picture>
+                <p class="img-paragraph">LA BELLE, 2024</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script defer src="./js/modal.js"></script>
+  </body>
+</html>
