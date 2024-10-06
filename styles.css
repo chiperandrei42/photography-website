@@ -390,6 +390,8 @@ template {
         margin-top: -16px;
         margin-bottom: 16px;
         padding: 16px 21px;
+        position:fixed;
+        width:90vw;
 }
 
 .page-wrapper {
@@ -444,6 +446,7 @@ template {
         display:flex;
         flex-direction: column;
         background-color: #0B1D4A;
+        opacity: 0;
 }
 
 
@@ -479,4 +482,16 @@ template {
     border-top:1px solid gray;
     padding:10px;
     font-size:21px;
+}
+
+.img-wrapper {
+    padding-top:96px;
+    padding-bottom:24px;
+    display:flex;
+    flex-direction: column;
+    gap:48px;
+}
+
+.img-wrapper img {
+    object-fit:cover;
 }

@@ -5,16 +5,16 @@
     modal: document.querySelector("[data-modal]"),
   };
 
-    refs.openModalBtn.addEventListener("click", () => {
+  refs.openModalBtn.addEventListener("click", () => {
       toggleModal();
-        let opacity = 0;
+      let opacity = 0;
         const interval = setInterval(() => {
-            if (opacity < 1) {
+          if (opacity < 1) {
                 opacity += 0.1;
                 refs.modal.style.opacity = opacity;
             }
             else {
-                clearInterval(interval);
+              clearInterval(interval);
             }
         }, 10);
   });
