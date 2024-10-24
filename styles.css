@@ -531,7 +531,7 @@ template {
     height: fit-content;
     position: absolute;
     right: 0px;
-    top:15%;
+    top:5%;
 }
 
 .modal-close-img-modal svg {
