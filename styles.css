@@ -509,7 +509,7 @@ template {
     height:600px;
     display:flex;
     align-items: center;
-    padding-top:50px;
+    padding-top:150px;
 }
 
 .image-modal-clicked {
