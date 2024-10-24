@@ -513,7 +513,8 @@ template {
 }
 
 .image-modal-clicked {
-    padding: 0px 17px;
+    padding-left: 17px;
+    padding-right: 17px;
     width:100%;
 }
 
