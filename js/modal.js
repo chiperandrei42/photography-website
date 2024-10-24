@@ -8,7 +8,25 @@
         body: document.querySelector("body"),
         imgWrapperModal: document.querySelector(".img-wrapper-modal"),
         closeImageModalBtn: document.querySelector("[image-modal-close]")
-    };
+  };
+  
+
+      for (let i = 0; i < refs.images.length; i++) {
+        refs.images[i].addEventListener("click", () => {
+            refs.body.classList.add("scrolllock");
+
+            refs.imgWrapperModal.innerHTML = "";
+
+            let newImg = document.createElement("img");
+            newImg.classList.add("image-modal-clicked");
+            newImg.src = refs.images[i].src;
+            newImg.alt = refs.images[i].alt;
+
+            refs.imgWrapperModal.appendChild(newImg);
+
+            fadeIn(refs.modalDiv);
+        });
+    }
 
     function fadeIn(element, duration = 10) {
         element.style.opacity = 0;
@@ -39,7 +57,8 @@
     }
 
     refs.openModalBtn.addEventListener("click", () => {
-        fadeIn(refs.modal);
+      fadeIn(refs.modal);
+      refs.body.classList.add("scrolllock");
     });
 
     refs.closeModalBtn.addEventListener("click", () => {
@@ -47,23 +66,6 @@
             refs.body.classList.remove("scrolllock");
         });
     });
-
-    for (let i = 0; i < refs.images.length; i++) {
-        refs.images[i].addEventListener("click", () => {
-            refs.body.classList.add("scrolllock");
-
-            refs.imgWrapperModal.innerHTML = "";
-
-            let newImg = document.createElement("img");
-            newImg.classList.add("image-modal-clicked");
-            newImg.src = refs.images[i].src;
-            newImg.alt = refs.images[i].alt;
-
-            refs.imgWrapperModal.appendChild(newImg);
-
-            fadeIn(refs.modalDiv);
-        });
-    }
 
     refs.closeImageModalBtn.addEventListener("click", () => {
         fadeOut(refs.modalDiv, 10, () => {
