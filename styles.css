@@ -441,7 +441,7 @@ template {
     position: fixed;
         width: 100vw;
         height: 100vh;
-        margin:-50px -21px;
+        margin:-40px -21px;
         background-color: rgba(255, 255, 255);
         display:flex;
         flex-direction: column;
@@ -494,4 +494,47 @@ template {
 
 .img-wrapper img {
     object-fit:cover;
+}
+
+.image-modal {
+    background-color: rgba(255, 255, 255, 0.9);
+    height:100vh;
+    width: 100vw;
+    position:fixed;
+    margin: -15px -21px;
+    display:flex;
+}
+
+.img-wrapper-modal {
+    height:600px;
+    display:flex;
+    align-items: center;
+    padding-top:50px;
+}
+
+.image-modal-clicked {
+    padding: 0px 17px;
+    width:100%;
+}
+
+.scrolllock {
+    overflow: hidden;
+}
+
+.modal-close-img-modal {
+    background-color: transparent;
+    border: none;
+    padding: 21px;
+    display: flex;
+    fill: black;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0px;
+    top:15%;
+}
+
+.modal-close-img-modal svg {
+    width: 24px;
+    height: 24px;
 }
