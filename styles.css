@@ -515,7 +515,7 @@ template {
 .image-modal-clicked {
     padding-left: 17px;
     padding-right: 17px;
-    width:100%;
+    width: 90%;
 }
 
 .scrolllock {
