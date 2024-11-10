@@ -520,6 +520,8 @@ template {
 
 .scrolllock {
     touch-action: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .modal-close-img-modal {
