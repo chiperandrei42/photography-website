@@ -519,7 +519,7 @@ template {
 }
 
 .scrolllock {
-    overflow: hidden;
+    touch-action: none;
 }
 
 .modal-close-img-modal {
