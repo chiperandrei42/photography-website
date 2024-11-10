@@ -10,6 +10,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
+    
+    <div class="splash">
+        <picture class="fade-in">
+        <source media="(min-width:1158px)" srcset="./images/cosminphotographylogo.png" width="158">
+        <source media="(min-width:768px)" srcset="./images/cosminphotographylogo.png" width="168">
+        <source media="(min-width:480px)" srcset="./images/cosminphotographylogo.png" width="105">
+        <img src="./images/cosminphotographylogo.png" alt="birthday-celebration" width="105">
+    </picture>
+    </div>
+
     <div class="page-wrapper">
     <nav class="navbar">
             <div class="nav-div">
@@ -19,8 +29,8 @@
         <div class="modal is-hidden" data-modal>
             <button data-modal-close class="modal-close" type="button"><svg><use href="./symbol-defs.svg#modal-close"></use></svg></button>
             <ul class="link-class-modal">
-                <a class ="mobile-modal-link"href="./overview">OVERVIEW</a>
-                <a class ="mobile-modal-link"href="./overview">WEDDINGS</a>
+                <a class ="mobile-modal-link"href="./index.html">OVERVIEW</a>
+                <a class ="mobile-modal-link"href="./weddings.html">WEDDINGS</a>
                 <a class ="mobile-modal-link"href="./overview">BIRTHDAYS</a>
                 <a class ="mobile-modal-link"href="./overview">ABOUT ME</a>
                 <a class ="mobile-modal-link"href="./overview">CONTACT</a>
@@ -148,5 +158,6 @@
     </section>
     </div>
     <script defer src="./js/modal.js"></script>
+    <script defer src="./js/splashscreen.js"></script>
   </body>
 </html>

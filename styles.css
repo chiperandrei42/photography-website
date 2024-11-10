@@ -538,3 +538,42 @@ template {
     width: 24px;
     height: 24px;
 }
+
+.splash{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0B1D4A;
+    z-index: 200;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.splash.display-none {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0B1D4A;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
