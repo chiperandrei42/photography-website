@@ -382,12 +382,6 @@ template {
     --crimson-text-regular: 'Crimson Text', serif;
 }
 
-
-body {
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-
 .navbar {
     background-color:#0B1D4A;
     position: relative;
