@@ -28,6 +28,23 @@
         });
     }
 
+        refs.openModalBtn.addEventListener("click", () => {
+      fadeIn(refs.modal);
+      refs.body.classList.add("scrolllock");
+    });
+
+    refs.closeModalBtn.addEventListener("click", () => {
+        fadeOut(refs.modal, 10, () => {
+            refs.body.classList.remove("scrolllock");
+        });
+    });
+
+    refs.closeImageModalBtn.addEventListener("click", () => {
+        fadeOut(refs.modalDiv, 10, () => {
+            refs.body.classList.remove("scrolllock");
+        });
+    });
+
     function fadeIn(element, duration = 10) {
         element.style.opacity = 0;
         element.classList.remove("is-hidden");
@@ -55,21 +72,4 @@
             }
         }, duration);
     }
-
-    refs.openModalBtn.addEventListener("click", () => {
-      fadeIn(refs.modal);
-      refs.body.classList.add("scrolllock");
-    });
-
-    refs.closeModalBtn.addEventListener("click", () => {
-        fadeOut(refs.modal, 10, () => {
-            refs.body.classList.remove("scrolllock");
-        });
-    });
-
-    refs.closeImageModalBtn.addEventListener("click", () => {
-        fadeOut(refs.modalDiv, 10, () => {
-            refs.body.classList.remove("scrolllock");
-        });
-    });
 })();
