@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+    <nav class="navbar">
+            <div class="nav-div">
+                <img class="heading-logo" src="./images/cosminphotographylogo.png">
+            <button data-modal-open class="hamburger-button" type="button"><svg class="hamburger-menu-mobile"><use href="./symbol-defs.svg#hamburger-menu"></use></svg></button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+            <button data-modal-close class="modal-close" type="button"><svg><use href="./symbol-defs.svg#modal-close"></use></svg></button>
+            <ul class="link-class-modal">
+                <a class ="mobile-modal-link"href="./index.html">OVERVIEW</a>
+                <a class ="mobile-modal-link"href="./overview">BIRTHDAYS</a>
+                <a class ="mobile-modal-link"href="./aboutme.html">ABOUT ME</a>
+                <a class ="mobile-modal-link"href="./contact.html">CONTACT</a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="photographer-portrait">
+        </div>
+        <div class="lets-talk-container">
+        <h2 class="lets-talk-title">Let’s Talk</h2>
+    </div>
+    <p class="timeless-art">We would love to hear from you!</p>
+
+    <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="129df58a-3af7-48e3-975b-b005fb7a6b56">
+            <input type="text" name="name" placeholder="Nume" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Email address" class="contact-inputs" required>
+            <textarea name="message" placeholder="Data, locatia evenimentului si alte detalii" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+            <hr>
+        </form>
+    </div>
+    <div class="other-contact-methods-container">
+        <p class="prefer-email-p">Prefer other methods?</p>
+        <p class="email-p">You can reach me at</p>
+        <div class="socials-wrapper">
+        <a class="socials-a"><svg class="socials-icons"><use href="./symbol-defs.svg#icon-envelope"></use></svg>cosminnphotography@gmail.com</a>
+        <a  href="https://www.instagram.com/__.cosminn.__/" class="socials-a"><svg class="socials-icons"><use href="./symbol-defs.svg#icon-instagram"></use></svg>@__.cosminn.__</a>
+        <a  href="tel:+40 (763) 679 574"class="socials-a"><svg class="socials-icons"><use href="./symbol-defs.svg#icon-phone"></use></svg>+40 (763) 679 574</a>
+        </div>
+    </div>
+    </div>
+    </main>
+    <script defer src="./js/modal.js"></script>
+  </body>
+</html>

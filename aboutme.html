@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="page-wrapper">
+    <nav class="navbar">
+            <div class="nav-div">
+                <img class="heading-logo" src="./images/cosminphotographylogo.png">
+            <button data-modal-open class="hamburger-button" type="button"><svg class="hamburger-menu-mobile"><use href="./symbol-defs.svg#hamburger-menu"></use></svg></button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+            <button data-modal-close class="modal-close" type="button"><svg><use href="./symbol-defs.svg#modal-close"></use></svg></button>
+            <ul class="link-class-modal">
+                <a class ="mobile-modal-link"href="./index.html">OVERVIEW</a>
+                <a class ="mobile-modal-link"href="./overview">BIRTHDAYS</a>
+                <a class ="mobile-modal-link"href="./aboutme.html">ABOUT ME</a>
+                <a class ="mobile-modal-link"href="./contact.html">CONTACT</a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="photographer-portrait">
+            <img src="" alt="portrait of a photographer">
+        </div>
+        <div class="about-me-container">
+        <h3 class="about-me-title">ABOUT ME</h3>
+        <p class="about-me-paragraph">Mă numesc Protopopescu Cosmin Andrei și incă din 2023 surprind cele mai frumoase momente ale persoanelor pe care le-am cunoscut de-a lungul carierei mele in fotografie!</p>
+        <p class="about-me-paragraph">Daca doriți să vă amintiti cu bucurie de un moment frumos alaturi de cei dragi sau dacă aveți un eveniment special în viața dumneavoastră, ofer servicii pentru a crea poze și amintiri de neuitat!</p>
+    </div>
+
+    <p class="timeless-art">Turning moments into timeless art</p>
+    </div>
+    </main>
+    <script defer src="./js/modal.js"></script>
+</body>
+</html>

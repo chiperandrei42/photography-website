@@ -380,6 +380,7 @@ template {
 
 :root {
     --crimson-text-regular: 'Crimson Text', serif;
+    --inter-text-regular: 'Inter', serif;
 }
 
 .navbar {
@@ -569,4 +570,157 @@ template {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+
+
+.photographer-portrait {
+    padding-top:47px;
+    margin-left: -21px;
+}
+
+.photographer-portrait img {
+    width:100vw;
+    height:306px;
+}
+
+.about-me-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:24px;
+    gap:12px;
+}
+
+.about-me-title {
+    font-family: var(--crimson-text-regular);
+    font-size:20px;
+    font-weight:700;
+    margin:0;
+}
+
+.about-me-paragraph {
+    text-align: center;
+    font-size:15px;
+    font-weight: 400;
+    margin:0;
+    font-family: var(--inter-text-regular);
+    padding-left:27px;
+    padding-right:27px;
+    line-height: 20px;
+}
+
+.timeless-art {
+    font-family: var(--crimson-text-regular);
+    color:#0B1D4A;
+    font-style: italic;
+    font-size:20px;
+    font-weight:600;
+    position: absolute;
+    bottom:0px;
+    right:20px;
+}
+
+.lets-talk-title {
+    font-size:24px;
+    margin:0;
+    padding-top:40px;
+    text-align: center;
+    color:#212121;
+}
+
+.form-container form {
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+    padding:0px 26px;
+    padding-top:12px;
+}
+
+.form-container input {
+    height:44px;
+    padding-left:16px;
+    border-radius:10px;
+    border:1px solid #ADADAD;
+    font-family: var(--inter-text-regular);
+    font-size:14px;
+}
+
+.form-container textarea {
+    height:130px;
+    padding-left:16px;
+    padding-top:16px;
+    border-radius: 10px;
+    border: 1px solid #ADADAD;
+    font-family: var(--inter-text-regular);
+    font-size: 14px;
+    resize:none;
+}
+
+.form-container button {
+    height:44px;
+    border-radius:10px;
+    border:none;
+    background-color:#0B1D4A;
+    color:white;
+    font-family: var(--inter-text-regular);
+    font-size:14px;
+}
+
+.form-container p {
+    font-family: var(--inter-text-regular);
+    text-align: center;
+    color: #727272;
+    margin:0;
+    font-size:14px;
+}
+
+hr {
+    color:#ADADAD;
+    width:100%;
+    margin-top:20px;
+}
+
+.other-contact-methods-container {
+    padding-left:27px;
+}
+
+.prefer-email-p {
+    font-size:18px;
+    font-weight:600;
+    font-family: var(--crimson-text-regular);
+}
+
+.email-p {
+    color:#727272;
+    font-family: var(--inter-text-regular);
+    font-size:14px;
+    line-height: 20px;
+}
+
+.email-p span {
+    color:#0B1D4A;
+    text-decoration: underline;
+}
+
+.socials-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.socials-a {
+    text-decoration: none;
+    color:#0B1D4A;
+    font-family: var(--inter-text-regular);
+    display:flex;
+    gap:12px;
+    align-items: center;
+}
+
+.socials-icons {
+    width:24px;
+    height:24px;
+    fill:#0B1D4A;
 }
