@@ -620,6 +620,7 @@ template {
     position: absolute;
     bottom:0px;
     right:20px;
+    visibility: hidden;
 }
 
 .lets-talk-title {
@@ -709,7 +710,6 @@ hr {
     display:flex;
     flex-direction: column;
     gap:12px;
-    margin-bottom:100px;
 }
 
 .socials-a {
