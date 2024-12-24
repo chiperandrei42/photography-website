@@ -666,6 +666,7 @@ template {
     color:white;
     font-family: var(--inter-text-regular);
     font-size:14px;
+    cursor: pointer;
 }
 
 .form-container p {
@@ -708,6 +709,7 @@ hr {
     display:flex;
     flex-direction: column;
     gap:12px;
+    padding-bottom:50px;
 }
 
 .socials-a {
