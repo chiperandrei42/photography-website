@@ -709,7 +709,7 @@ hr {
     display:flex;
     flex-direction: column;
     gap:12px;
-    padding-bottom:50px;
+    margin-bottom:50px;
 }
 
 .socials-a {
